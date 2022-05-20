@@ -1,0 +1,275 @@
+:root {
+    --paragraphtextcolor: #757575;
+    --titletextcolor: #212121;
+    --accent: #2196F3;
+    --cardsbcg: #FFFFFF;
+    --teambcg: #F5F4FA;
+    --headerbcg: #FFFFFF;
+    --herobcg: #2F303A;
+    --solutionsbcg: #FFFFFF;
+    --worksbcg: #FFFFFF;
+    --footerbcg: #2F303A;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+    color: #757575;
+    background-color: #FFF;
+}
+
+ul {
+    list-style:none;
+}
+
+
+/* цвет основого текста параграфов #757575 */
+
+/* цвет заголовков #212121 */
+
+/* цвет хедера #ECECEC */
+
+/* цвет решения для бизнеса #2F303A */
+
+/* цвет чем мы занимаемся #2F303A */
+
+
+.header {
+    background-color: var(--headerbsg) ;
+}
+
+.logo {
+    font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+
+color: var(--accent);
+}
+.logo1 {
+    font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+
+color: #000000;
+}
+
+.header {
+    background-color:#FFFFFF;
+}
+
+/* site-nav */
+
+
+.link {
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+    color: #212121;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+   color: var(--accent)
+}
+
+.link-current {
+    color: var(--accent)    
+}
+
+.contacts .link {
+    color: #757575;
+}
+.contacts, .link:hover,
+.contacts, .link:focus {
+    color: var(--accent)  
+}
+
+/* hero */
+
+.hero-title {
+    font-weight: 900;
+font-size: 44px;
+line-height: 1,36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.hero {    
+    text-align: center;
+    background: var(--herobcg);
+}
+
+.button {
+    display: inline-block;
+    font-weight: 700;
+font-size: 16px;
+line-height: 1,88;
+text-align: center;
+letter-spacing: 0.06em;
+font-family: inherit;
+
+    color: #FFFFFF;
+    background-color: var(--accent);
+
+    cursor: pointer;
+}
+
+/* Наши преимущества section solutions */
+
+.solutions {
+    background-color: var(--solutionsbcg);
+}
+
+.solutions-title {
+color: var(--titletextcolor);
+}
+
+.solutions-text {
+    color: var(--paragraphtextcolor);
+}
+
+.section-title {
+    color: var(--titletextcolor);
+    text-align: center;
+}
+
+/* наша команда */
+
+.team {
+   background-color: var(--teambcg);
+}
+
+.team-main-title {
+    color: var(--titletextcolor)   
+}
+
+.cards {
+    background-color: white;
+}
+
+.team .upperphotounderline {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1,9;
+    
+color: var(--titletextcolor)
+}
+
+.bottomphotounderline {
+    color: var(--paragraphtextcolor);
+}
+
+/* portfolio */
+
+/* works */
+
+.main-portfolio {
+    background-color: var(--worksbcg);
+}
+
+.nav-portfolio {
+    background-color: #FFFFFF;
+}
+
+.works .upperphotounderline {
+    font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+color: var(--titletextcolor)
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--footerbcg);
+}
+
+
+/* footer logo */
+
+.logo {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+
+color: var(--accent);
+text-decoration: none;
+}
+.logo2 {
+    font-family: 'Raleway';
+font-style: normal; 
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+}
+
+.streetadres {
+    font-style: normal;
+    font-weight: 400;
+font-size: 14px;
+line-height: 1,71;
+letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.streetadres:hover,
+.streetadress:focus 
+{
+   color: var(--accent)
+}
+
+.mail, .phone {
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1,71;
+letter-spacing: 0.03em;
+
+color: #FFFFFF99;
+text-decoration: none;
+}
+
+.mail:hover {
+   color: var(--accent)
+}
+
+.phone:hover {
+   color: var(--accent)
+}
+
+.nav-portfolio button {
+    background-color: #F5F4FA;
+font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.nav-portfolio button:hover,
+.nav-portfolio button:focus {
+    color: #FFFFFF;
+  background-color: var(--accent);
+}
