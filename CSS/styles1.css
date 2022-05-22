@@ -19,8 +19,9 @@ body {
 
 ul {
     list-style:none;
+    padding: 0;
+    margin: 0;
 }
-
 
 /* цвет основого текста параграфов #757575 */
 
@@ -32,10 +33,20 @@ ul {
 
 /* цвет чем мы занимаемся #2F303A */
 
-
-.header {
-    background-color: var(--headerbsg) ;
+.conteiner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1600px;
+    outline: 2px solid tomato;
 }
+.header {
+    display: inline-block;
+    height: 80px;
+    background-color: var(--headerbcg);
+    
+}
+
+
 
 .logo {
     font-family: 'Raleway';
@@ -43,6 +54,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
+
 
 color: var(--accent);
 }
@@ -53,30 +65,38 @@ font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 
-color: #000000;
-}
 
-.header {
-    background-color:#FFFFFF;
+color: #000000;
 }
 
 /* site-nav */
 
+.site-nav {
+    display: flex;
+}
+.site-nav a {
+    text-decoration: none;
+}
+
+.site-nav .item {
+    outline: 2px solid tomato;
+    margin-right: 50px;
+}
 
 .link {
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
-
-    color: #212121;
-    text-decoration: none;
-
-    cursor: pointer;
+text-decoration: none;
+color: #212121;
+ 
+cursor: pointer;
 }
 
 .link:hover,
 .link:focus {
+text-decoration: none;
    color: var(--accent)
 }
 
@@ -87,14 +107,30 @@ letter-spacing: 0.02em;
 .contacts .link {
     color: #757575;
 }
+
+.contacts {
+    display:flex;
+}
+
+.contacts .item {
+    margin-right: 50px;
+    display: flex;
+    outline: 2px solid tomato
+}
 .contacts, .link:hover,
 .contacts, .link:focus {
     color: var(--accent)  
 }
 
+.nav {
+    display: flex;
+}
+
 /* hero */
 
 .hero-title {
+    margin: 0;
+    margin-bottom: 30px;
     font-weight: 900;
 font-size: 44px;
 line-height: 1,36;
@@ -104,7 +140,13 @@ text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.hero {    
+.hero {  
+    display:inline-block;  
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+height: 600px;
     text-align: center;
     background: var(--herobcg);
 }
@@ -124,13 +166,29 @@ font-family: inherit;
     cursor: pointer;
 }
 
+.button.order {
+display: inline-block;
+padding: 10px 32px;
+min-width: 200px;
+height: 50px;
+border: solid transparent;
+border-radius: 4px;
+background-color: var (--accent);
+
+}
+
 /* Наши преимущества section solutions */
 
 .solutions {
+    padding-top: 100px;
+    padding-bottom: 94px;
     background-color: var(--solutionsbcg);
+
 }
 
 .solutions-title {
+    margin: 0;
+    margin-bottom: 9,41px;
 color: var(--titletextcolor);
 }
 
@@ -139,25 +197,40 @@ color: var(--titletextcolor);
 }
 
 .section-title {
+    margin: 0;
+    margin-bottom: 50px;
     color: var(--titletextcolor);
     text-align: center;
 }
 
+.solutions-text{
+    margin-bottom: 94px;
+}
+
+.solutions.image {
+    display:flex
+}
 /* наша команда */
 
 .team {
+ padding-top: 100px;
+    padding-bottom: 94px;
    background-color: var(--teambcg);
 }
 
-.team-main-title {
-    color: var(--titletextcolor)   
+.team-list {
+    display: flex;
 }
 
 .cards {
+    
     background-color: white;
 }
 
 .team .upperphotounderline {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
 font-size: 16px;
 line-height: 1,9;
@@ -166,6 +239,7 @@ color: var(--titletextcolor)
 }
 
 .bottomphotounderline {
+    margin: 0;
     color: var(--paragraphtextcolor);
 }
 
@@ -193,11 +267,21 @@ color: var(--titletextcolor)
 /* footer */
 
 .footer {
+      display:inline-block;
+    padding-top: 60px;
+   padding-bottom: 60px; 
+    width: 1600px;
+height: 252px;
     background-color: var(--footerbcg);
 }
 
 
 /* footer logo */
+
+footer a {
+  
+    text-decoration: none;
+}
 
 .logo {
     font-family: 'Raleway';
@@ -207,8 +291,9 @@ font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 
+
 color: var(--accent);
-text-decoration: none;
+
 }
 .logo2 {
     font-family: 'Raleway';
@@ -217,6 +302,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
+
 
 color: #FFFFFF;
 }
@@ -227,9 +313,10 @@ color: #FFFFFF;
 font-size: 14px;
 line-height: 1,71;
 letter-spacing: 0.03em;
+  text-decoration: none;
 
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #FFFFFF;
+  
 }
 
 .streetadres:hover,
@@ -273,3 +360,4 @@ color: #212121;
     color: #FFFFFF;
   background-color: var(--accent);
 }
+
