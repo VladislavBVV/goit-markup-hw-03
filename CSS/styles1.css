@@ -141,8 +141,8 @@ text-decoration: none;
     display:flex;
     text-align: center;
     margin: 32px 0px;
-    padding:0px;
-    margin-left: 333px;
+    padding-left:200px;
+    padding-right: 215px;
     
 }
 
@@ -357,17 +357,19 @@ color: #212121;
 .works-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-bottom: -30px;
-    
-
+   /* padding-left: 215px; */
+    margin-right: 215px;
+        /* align-items: flex-start; */
+     flex-basis: calc ((100% - 60px)/3);
 }
 
 .works-list .cards {
-    flex-basis: calc ((100% - 60px)/3);
+/*    
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
     outline: 2px solid tomato;
+
+
 }
 
 .works-list .cards + .cards {
@@ -388,7 +390,8 @@ color: var(--titletextcolor)
 .footer {
       display:inline-block;
     padding-top: 60px;
-   padding-bottom: 60px; 
+   padding-bottom: 60px;
+   padding-left: 215px; 
     width: 1570px;
 height: 252px;
     background-color: var(--footerbcg);
@@ -399,6 +402,7 @@ height: 252px;
 
 footer a {
     text-decoration: none;
+   
 }
 
 .logo {
@@ -425,13 +429,21 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 }
 
+.footerlogo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
 .streetadres {
+    display: inline-block;
     font-style: normal;
     font-weight: 400;
 font-size: 14px;
 line-height: 1,71;
 letter-spacing: 0.03em;
   text-decoration: none;
+  margin-bottom: 9px;
 
   color: #FFFFFF;
   
@@ -441,6 +453,11 @@ letter-spacing: 0.03em;
 .streetadress:focus 
 {
    color: var(--accent)
+}
+
+.mail {
+    display: inline-block;
+    margin-bottom: 9px;
 }
 
 .mail, .phone {
