@@ -4,7 +4,7 @@
     --accent: #2196F3;
     --cardsbcg: #FFFFFF;
     --teambcg: #F5F4FA;
-    --headerbcg: #FFFFFF;
+    --headerbgc: #FFFFFF;
     --herobcg: #2F303A;
     --solutionsbcg: #FFFFFF;
     --worksbcg: #FFFFFF;
@@ -15,54 +15,57 @@ body {
    font-family: "Roboto", sans-serif;
     color: #757575;
     background-color: #FFF;
+
 }
 
 ul {
+    padding: 0px;
+    margin: 0px;
     list-style:none;
-    padding: 0;
-    margin: 0;
 }
 
-/* цвет основого текста параграфов #757575 */
+h2 {
+    margin-top: 0px;
+}  
 
-/* цвет заголовков #212121 */
+h3 {
+    margin-top: 0px;
+    margin-bottom: 9.4px;
+}
 
-/* цвет хедера #ECECEC */
 
-/* цвет решения для бизнеса #2F303A */
-
-/* цвет чем мы занимаемся #2F303A */
-
-.conteiner {
-    margin-right: auto;
-    margin-left: auto;
+.container {
+    width: 1200px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1600px;
-    outline: 2px solid tomato;
+    outline: 2px solid tomato
+
 }
+
+/* Header */
+
 .header {
-    display:flex;
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--headerbgc);
+    
+}
+
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
     display: inline-block;
-    width: 1570px;
-    height: 80px;
-    background-color: var(--headerbcg);
-    /* background-color: blue; */
-    outline: 2px solid tomato;
 }
-
-.navlogo {
-    margin-left:215px;
-    margin-right: 93px;
-}
-
 .logo {
     font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
-
 
 color: var(--accent);
 }
@@ -73,43 +76,27 @@ font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 
-
 color: #000000;
 }
 
-/* site-nav */
-
-
-.nav {
-    align-items: center;
-   
-}
-
 .site-nav {
-    display: flex;
-
-}
-.header a {
-    text-decoration: none;
-}
-
-.head {
-    display: flex;
-    padding-left: 0px;
-    width: 1600px;
-
+    /* align-items: center; */
 }
 
 .site-nav .item {
-
-    outline: 2px solid tomato;
-    /* margin-left: 93px; */
+    display: inline-block;
+    padding: 0px;
+    outline: 1px solid tomato;
 }
 
 .site-nav .item + .item {
     margin-left: 50px;
 }
 
+.logo-header {
+   text-decoration: none;
+   margin-right: 50px;
+}
 
 .link {
 font-weight: 500;
@@ -129,45 +116,42 @@ text-decoration: none;
 }
 
 .link-current {
-    color: var(--accent)    
-}
-
-.contacts .link {
-
-    color: #757575;
-}
-
-.contacts {
-    display:flex;
-    text-align: center;
-    margin: 32px 0px;
-    padding-left:200px;
-    padding-right: 215px;
-    
-}
-
-.contacts .item + .item {
-    margin-left: 48px;
+    color: var(--accent);
+    text-decoration: none;    
 }
 
 .contacts .item {
+display: inline-block;
+outline: 1px solid tomato;
+}
+
+/* .contactsinfo {
     display: flex;
-    outline: 2px solid tomato
+    margin-right: 0px;
+} */
+
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
+.contacts .link {
+    color: #757575;
 }
 .contacts, .link:hover,
 .contacts, .link:focus {
     color: var(--accent)  
 }
 
-.nav {
-    display: flex;
-
-}
-
 /* hero */
 
+.hero {    
+    text-align: center;
+    background: var(--herobcg);
+}
+
 .hero-title {
-    margin: 0;
+    padding: 0px;
+    margin-top: 0px;
     margin-bottom: 30px;
     font-weight: 900;
 font-size: 44px;
@@ -178,19 +162,16 @@ text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.hero {  
-    display:inline-block;  
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 452px;
-    padding-right: 452px;
-height: 600px;
+.hero .button {
+    
+    min-width: 200px;
+    padding: 10px 32px;  
+    border: 0px solid transparent;
     text-align: center;
-    background: var(--herobcg);
 }
 
 .button {
-    display: inline-block;
+    /* display: inline-block; */
     font-weight: 700;
 font-size: 16px;
 line-height: 1,88;
@@ -200,45 +181,33 @@ font-family: inherit;
 
     color: #FFFFFF;
     background-color: var(--accent);
-
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.button.order {
-display: inline-block;
-padding: 10px 32px;
-min-width: 200px;
-height: 50px;
-border: solid transparent;
-border-radius: 4px;
-background-color: var (--accent);
-
-}
 
 /* Наши преимущества section solutions */
 
-.solutions {
-    padding-top: 100px;
+.section {
+    padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--solutionsbcg);
-
 }
 
-.solutions-par {
-display: flex;
-margin-left: 215px;
-margin-right: 215px;
+.solutionspar {
+    display: flex;
+    margin-bottom: 94px;
 }
 
-.solutions-par .item + .item {
-margin-left: 30px;
-
+.solutionspar .item {
+    width: 270px;
+    
 }
 
+.solutionspar .item + .item{
+    margin-left: 30px;
+}
 .solutions-title {
-    margin: 0;
-    margin-bottom: 9,41px;
-
 
 color: var(--titletextcolor);
 }
@@ -248,54 +217,62 @@ color: var(--titletextcolor);
 }
 
 .section-title {
-    margin: 0;
     margin-bottom: 50px;
     color: var(--titletextcolor);
     text-align: center;
 }
 
-.solutions-text{
-    margin-bottom: 94px;
-}
-
-.solutions.image {
-    display:flex;
-    padding: 0px;
-    margin-left: 215px;
-margin-right: 215px;
+.whatwedo {
+    display: flex;
 
 }
 
-.solutions .image .item + .item {
+.whatwedo .item + .item{
+
     margin-left: 30px;
 }
+
 /* наша команда */
 
 .team {
- padding-top: 100px;
-    padding-bottom: 94px;
    background-color: var(--teambcg);
 }
 
+.section-titlele {
+    color: var(--titletextcolor)   
+}
+
+/* .team-list .cards {
+    margin-left: 30px;
+} */
+
+.team-list .cards + .cards{
+    margin-left: 30px;
+}
+
+.team-list .cards {
+    background-color: #FFFFFF;
+border-radius: 0px 0px 4px 4px;
+}
+
+/* .team-list .cards:nth-child(3n) {
+margin-right: 0;
+} */
+
 .team-list {
     display: flex;
-        margin-left: 215px;
-    margin-right: 215px;
-}
 
-.cards {
-border-radius: 0px 0px 4px 4px;
-    background-color: white;
+    
+    /* background-color: white; */
 }
-
-.team-list .cards + .cards {
-margin-left: 30px;
-}
+/* .team-list .cards + .cards {
+    margin-left: 20px;
+} */
 
 .team .upperphotounderline {
-    margin: 0;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
     font-weight: 500;
 font-size: 16px;
 line-height: 1,9;
@@ -303,8 +280,9 @@ line-height: 1,9;
 color: var(--titletextcolor)
 }
 
-.bottomphotounderline {
-    margin: 0;
+.team .bottomphotounderline {
+    margin-bottom: 30px;
+    text-align: center;
     color: var(--paragraphtextcolor);
 }
 
@@ -312,69 +290,55 @@ color: var(--titletextcolor)
 
 /* works */
 
+/* Portfolio button */
+
+.nav-portfolio .button {
+    padding: 6px 22px;
+    border: 1px solid transparent;
+
+}
+
 .main-portfolio {
     background-color: var(--worksbcg);
+
 }
 
 .nav-portfolio {
-     display: flex;
-     justify-content: center;
-     margin-top: 94px;
-     margin-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+    display: flex;
     background-color: #FFFFFF;
+    
     
 }
 
-
-.nav-portfolio button {
-    display: inline-block;
-    padding: 6px 22px;
-    border: solid transparent;
-border-radius: 4px;
-    background-color: #F5F4FA;
-font-weight: 500;
-font-size: 16px;
-line-height: 1,62;
-text-align: center;
-letter-spacing: 0.03em;
-background-color: var (--accent);
-color: #212121;
-}
-
-.nav-portfolio button:hover,
-.nav-portfolio button:focus {
-    color: #FFFFFF;
-  background-color: var(--accent);
-}
-
-
-
 .nav-portfolio .item + .item {
-    margin-left: 8px;
+margin-left: 8px;
 }
-
 
 .works-list {
     display: flex;
     flex-wrap: wrap;
-   /* padding-left: 215px; */
-    margin-right: 215px;
-        /* align-items: flex-start; */
-     flex-basis: calc ((100% - 60px)/3);
 }
 
 .works-list .cards {
-/*    
-    margin-top: 30px;
-    margin-bottom: 30px; */
-    outline: 2px solid tomato;
 
+    width: calc((100% - 60px)/3);
+    border: 1px solid #EEEEEE;
+    margin-right: 30px;
+    margin-bottom: 30px;
 
 }
 
-.works-list .cards + .cards {
-    margin-left: 30px;
+.works-list .cards:nth-child(3n) {
+margin-right: 0;
 }
+
+.works-list .cards:nth-last-child(-n + 3) {
+margin-bottom: 0;
+}
+
+
 
 .works-list .upperphotounderline {
     font-weight: 700;
@@ -385,24 +349,28 @@ letter-spacing: 0.06em;
 color: var(--titletextcolor)
 }
 
+.works-list .bottomphotounderline {
+    margin-bottom: 30px;
+
+    color: var(--paragraphtextcolor);
+}
+
 /* footer */
 
 .footer {
-      display:inline-block;
-    padding-top: 60px;
-   padding-bottom: 60px;
-   padding-left: 215px; 
-    width: 1570px;
-height: 252px;
     background-color: var(--footerbcg);
 }
 
-
 /* footer logo */
 
-footer a {
+
+.footer a {
     text-decoration: none;
-   
+}
+
+.mainlogo {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -412,7 +380,6 @@ font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
-
 
 color: var(--accent);
 
@@ -425,25 +392,18 @@ font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 
-
 color: #FFFFFF;
 }
 
-.footerlogo {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-
 .streetadres {
     display: inline-block;
+    margin-bottom: 9px;
     font-style: normal;
     font-weight: 400;
 font-size: 14px;
 line-height: 1,71;
 letter-spacing: 0.03em;
   text-decoration: none;
-  margin-bottom: 9px;
 
   color: #FFFFFF;
   
@@ -453,11 +413,6 @@ letter-spacing: 0.03em;
 .streetadress:focus 
 {
    color: var(--accent)
-}
-
-.mail {
-    display: inline-block;
-    margin-bottom: 9px;
 }
 
 .mail, .phone {
@@ -471,6 +426,11 @@ color: #FFFFFF99;
 text-decoration: none;
 }
 
+.mail {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
 .mail:hover {
    color: var(--accent)
 }
@@ -478,6 +438,24 @@ text-decoration: none;
 .phone:hover {
    color: var(--accent)
 }
+
+.nav-portfolio button {
+    background-color: #F5F4FA;
+font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.nav-portfolio button:hover,
+.nav-portfolio button:focus {
+    color: #FFFFFF;
+  background-color: var(--accent);
+}
+
 
 
 
