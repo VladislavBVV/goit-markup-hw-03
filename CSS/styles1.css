@@ -45,19 +45,15 @@ h3 {
 
 /* ---------Header---------- */
 
-
 .header {
     border-bottom: 1px solid #ECECEC;
     background-color: var(--headerbgc);
     
 }
 
-
-
 .header .container {
     display: flex;
-    height: 80px;
-    
+   
 }
 
 .site-nav {
@@ -70,7 +66,9 @@ h3 {
     align-items: center;
 }
 
-.site-nav .link {
+.site-nav .link, .link-current {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: inline-block;
 }
 
@@ -80,14 +78,12 @@ h3 {
     margin-left: auto;
 }
 
-
 .logo {
     font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
-
 
 color: var(--accent);
 }
@@ -98,10 +94,8 @@ font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 
-
 color: #000000;
 }
-
 
 
 
@@ -118,7 +112,6 @@ color: #000000;
    text-decoration: none;
    margin-right: 50px;
 }
-
 
 .link {
 font-weight: 500;
@@ -143,9 +136,9 @@ text-decoration: none;
 }
 
 .contacts .item {
-/* outline: 1px solid tomato; */
+padding-top: 30px;
+padding-bottom: 30px;
 }
-
 
 .contacts .item + .item {
     margin-left: 50px;
@@ -159,24 +152,21 @@ text-decoration: none;
     color: var(--accent)  
 }
 
-/* ----------------------Hero----------------------- */
+/* hero */
 
-.hero {
-    padding: 200px;    
+.hero {    
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background: var(--herobcg);
 }
 
 .hero-title {
-    text-align: center;
-    max-width: 696px;
     padding: 0px;
-    margin: auto;
     margin-top: 0px;
     margin-bottom: 30px;
     font-weight: 900;
 font-size: 44px;
-line-height: 1,36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
@@ -192,7 +182,6 @@ text-transform: uppercase;
 }
 
 .button {
-    /* display: inline-block; */
     font-weight: 700;
 font-size: 16px;
 line-height: 1,88;
@@ -229,8 +218,12 @@ font-family: inherit;
     margin-left: 30px;
 }
 .solutions-title {
-
 color: var(--titletextcolor);
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 
 .solutions-text {
@@ -241,6 +234,12 @@ color: var(--titletextcolor);
     margin-bottom: 50px;
     color: var(--titletextcolor);
     text-align: center;
+    font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--titletextcolor) 
 }
 
 .whatwedo {
@@ -248,21 +247,20 @@ color: var(--titletextcolor);
 
 }
 
-.whatwedo .item + .item{
+.whatwedo .item {
+        width: 100%;
+    height: auto;
+}
 
+.whatwedo .item + .item{
     margin-left: 30px;
 }
 
-/*  -----------------------наша команда------------------------ */
+/* наша команда */
 
 .team {
    background-color: var(--teambcg);
 }
-
-.section-titlele {
-    color: var(--titletextcolor)   
-}
-
 
 
 .team-list .cards + .cards{
@@ -270,16 +268,27 @@ color: var(--titletextcolor);
 }
 
 .team-list .cards {
+    display: block;
+     width: 100%;
+    height: auto;
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 
+/* .team-list .cards:nth-child(3n) {
+margin-right: 0;
+} */
 
 .team-list {
     display: flex;
 
+    
+    /* background-color: white; */
 }
-
+/* .team-list .cards + .cards {
+    margin-left: 20px;
+} */
 
 .team .upperphotounderline {
     margin-top: 30px;
@@ -298,7 +307,26 @@ color: var(--titletextcolor)
     color: var(--paragraphtextcolor);
 }
 
-/* ---------------Portfolio---------------- */
+/* portfolio */
+
+
+
+.nav-portfolio .button {
+    background-color: #F5F4FA;
+font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.nav-portfolio button:hover,
+.nav-portfolio button:focus {
+    color: #FFFFFF;
+  background-color: var(--accent);
+}
 
 .nav-portfolio .button {
     padding: 6px 22px;
@@ -330,9 +358,11 @@ margin-left: 8px;
 }
 
 .works-list .cards {
-
+    display: block;
+ width: 100%;
+    height: auto;
     width: calc((100% - 60px)/3);
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -363,13 +393,13 @@ color: var(--titletextcolor)
     color: var(--paragraphtextcolor);
 }
 
-/* ------------------------footer------------------------ */
+/* footer */
 
 .footer {
     background-color: var(--footerbcg);
 }
 
-/* ---------------------footer logo---------------------- */
+/* footer logo */
 
 
 .footer a {
@@ -447,22 +477,6 @@ text-decoration: none;
    color: var(--accent)
 }
 
-.nav-portfolio button {
-    background-color: #F5F4FA;
-font-weight: 500;
-font-size: 16px;
-line-height: 1,62;
-text-align: center;
-letter-spacing: 0.03em;
-
-color: #212121;
-}
-
-.nav-portfolio button:hover,
-.nav-portfolio button:focus {
-    color: #FFFFFF;
-  background-color: var(--accent);
-}
 
 
 
