@@ -393,6 +393,7 @@ margin-left: 8px;
 .works-list {
     display: flex;
     flex-wrap: wrap;
+    outline: 1px solid tomato;
 }
 
 .works-list .container h3 p {
@@ -403,6 +404,7 @@ margin-left: 8px;
 
 
 .works-list .cards {
+    margin: 0px auto;
     display: block;
  width: 100%;
     height: auto;
